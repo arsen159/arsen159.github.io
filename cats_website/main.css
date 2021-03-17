@@ -1,15 +1,3 @@
-head {
-    text-align: center;
-    position: absolute;
-     }
-
-html {
-    width: 960px;
-    text-align: center;
-    position: all;
-    margin: 100px;
-}
-
 body {
     width: 960px;
     height: 100%;
