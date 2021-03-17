@@ -43,30 +43,7 @@
 		Http.send();
 		//savefile();
 	}
-		
-	function saveFile()
-	{
-		try
-		{
-		string str = “test”;
-		System.Text.ASCIIEncoding encoding = new System.Text.ASCIIEncoding();
-		byte[] arr = encoding.GetBytes(str);
-		HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(“url”);
-		request.Method = “PUT”;
-		request.ContentType = “text/plain”;
-		request.ContentLength = arr.Length;
-		request.KeepAlive = true;
-		Stream dataStream = request.GetRequestStream();
-		dataStream.Write(arr, 0, arr.Length);
-		dataStream.Close();
-		HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-		string returnString = response.StatusCode.ToString();
-		}
-		catch
-		{
 
-		}
-	}
 	</script>
 </body>
 </html>
